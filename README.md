@@ -23,3 +23,10 @@ $ cmake ../
 $ make && sudo make install
 ```
 
+## 配置glut
+
+```
+$ sudo apt-get install freeglut3-dev
+#include <GL/glut.h>
+````
+

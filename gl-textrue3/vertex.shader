@@ -1,10 +1,11 @@
 #version 330 core
-
 layout (location = 0) in vec3 aPos;
+layout (location = 1) in vec2 a_texCoord;
 
-// gl_Position是内置变量
+out vec2 v_texCoords;
+
 void main()
 {
-     // 注意我们如何把一个vec3作为vec4的构造器的参数
     gl_Position = vec4(aPos, 1.0);
+    v_texCoords = a_texCoord;
 }
